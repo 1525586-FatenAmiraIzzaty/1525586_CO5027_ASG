@@ -1,0 +1,556 @@
+﻿body {
+    background-color: #ffc4ff;
+    background-position: center;
+    font-family: Verdana;
+    font-size: 105%;
+    line-height: 1.5;
+    padding-bottom: 0;
+    background-image: url('../images/white-flowers-background-1.jpg');
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Navigation Menu Style
+   ====================== */
+
+.banner {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+    .banner img {
+        display: inline-block;
+        height: 200px;
+        width: 800px;
+        background-position: center top;
+    }
+
+.menu nav {
+    background-color: #872187;
+    height: 45px;
+}
+
+    .menu nav ul {
+        text-align: center;
+        list-style: none;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+        .menu nav ul li {
+            display: inline;
+        }
+
+            .menu nav ul li a {
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #ffffff;
+                padding: 12px 20px 13px 20px;
+            }
+
+    .menu nav a:link, .menu nav a:visited {
+        color: #FFFFFF;
+        display: inline-block;
+        height: 30px;
+    }
+
+    /* Allow to change the visited link */
+
+    .menu nav a:hover, .menu nav a:active,
+    .menu nav .active a:link, .menu nav .active a:visited {
+        background-color: #ffc4ff;
+        color: #000000;
+        height: 20px;
+    }
+
+
+/* Main Content Style
+   ====================== */
+
+.main {
+    text-align: justify;
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+    .main .profile img {
+        float: right;
+        width: 200px;
+    }
+
+p a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #344544;
+    padding: 10px 15px 10px 15px;
+}
+
+.main section#first_content, .main section#second_content {
+    padding: 3% 5%;
+    margin-top: 2%;
+    background-color: #C5E1C2;
+}
+
+    .main section#first_content h2, .main section#second_content h2 {
+        border-bottom: 5px solid black;
+    }
+
+#welcome {
+    padding: 5% 5%;
+    margin-top: 0;
+    background-image: url('../images/transparent.png');
+    color: #ffffff;
+}
+
+    #welcome img {
+        float: left;
+        width: 35%;
+    }
+
+    #welcome h1 {
+        font-size: 250%;
+    }
+
+.content {
+    width: 70%;
+    float: left;
+}
+
+.content_container {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+    .content_container img {
+        width: 100px;
+        height: 80px;
+        display: inline-block;
+    }
+
+    .content_container p {
+        text-align: center;
+        padding: 0 5% 0 5%;
+    }
+
+
+#social_media {
+    text-align: center;
+    padding-right: 3%;
+    line-height: 0;
+}
+
+    #social_media a img {
+        width: 7%;
+        height: 7%;
+    }
+
+/* Page Footer
+   ====================== */
+
+footer {
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    padding: 12px 20px 13px 20px;
+    height: auto;
+    color: white;
+    background-color: #872187;
+}
+
+    footer a {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: #344544;
+        padding: 5px 5px 5px 5px;
+        margin: 0;
+    }
+
+/* Contact Form */
+
+.contact_container {
+    width: 500px;
+    height: 804px;
+    margin: 20px auto;
+    background-image: url('../images/transparent.png');
+    float: left;
+}
+
+.info {
+    width: 100%;
+    padding: 1px 2px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.infoHeader {
+    text-decoration: underline;
+}
+
+.contact-form {
+    padding: 20px 40px 50px 10px;
+}
+
+.contact-label {
+    color: #ffffff;
+    font-weight: bold;
+    width: auto;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-button {
+    width: 40%;
+    padding: 20px 0;
+    margin: 10px 0 50px;
+    font-size: 20px;
+    border: none;
+    background-color: #872187;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .contact-button:hover {
+        background-color: #ffc4ff;
+        color: #000000;
+    }
+
+    .contact-input:focus, .contact-button:focus {
+        outline: none;
+    }
+
+.contact-input:focus {
+    background-color: #ffd800;
+}
+
+.validation {
+    font-weight: bold;
+    color: #fff200;
+}
+
+.literal {
+    color: #fff200;
+}
+
+/* Address and Map */
+
+#address {
+    width: 800px;
+    margin: 20px auto;
+    padding-left: 6px;
+    background-image: url('../images/transparent.png');
+    float: right;
+}
+
+    #address p {
+        text-align: left;
+        margin: 0;
+        font: #ffffff;
+    }
+
+.bottom_para {
+    padding-bottom: 10px;
+}
+
+#address #address_label {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: underline;
+    font: #ffffff;
+}
+
+#map {
+    width: 795px;
+    height: 500px;
+    margin: 0px;
+    margin-bottom: 10px;
+    overflow: scroll;
+}
+
+    #map img {
+        width: 900px;
+        height: 500px;
+        margin: 0px;
+    }
+
+/* Responsive Web Forms
+   ====================== */
+@media screen and (max-width:1280px) {
+    .banner img {
+        width: 800px;
+        height: 200px;
+    }
+
+    .main {
+        text-align: justify;
+        font-size: 95%;
+        width: 80%;
+    }
+
+    .menu nav {
+        height: 200px;
+        margin: 0 5px 0 5px;
+    }
+
+        .menu nav ul {
+            padding-left: 0;
+        }
+
+            .menu nav ul li {
+                width: 100%;
+            }
+
+                .menu nav ul li a {
+                    padding: 10px 25px;
+                }
+
+        .menu nav a:link, .menu nav a:visited {
+            padding: 10px 25px;
+            height: 20px;
+            display: block;
+        }
+
+    .content_container {
+        width: 285px;
+        height: 510px;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+
+        .content_container img {
+            width: 100px;
+            height: 80px;
+        }
+
+    #welcome img {
+        float: left;
+        width: 100%;
+    }
+
+    #welcome h1 {
+        font-size: 200%;
+    }
+
+    .contact_container {
+        width: 90%;
+    }
+
+    #address {
+        width: 85%;
+        float: left;
+        padding-left: 24px;
+    }
+
+    #map {
+        width: 95%;
+        height: 200px;
+    }
+
+        #map img {
+            width: 95%;
+            height: auto;
+        }
+}
+
+@media screen and (min-width:720px) and (max-width:1080px) {
+    .banner img {
+        width: 600px;
+        height: 200px;
+    }
+
+    .menu nav {
+        height: 200px;
+        margin: 0 5px 0 5px;
+    }
+
+        .menu nav ul {
+            padding-left: 0;
+        }
+
+            .menu nav ul li {
+                width: 100%;
+            }
+
+                .menu nav ul li a {
+                    padding: 10px 25px;
+                }
+
+        .menu nav a:link, .menu nav a:visited {
+            padding: 10px 25px;
+            height: 20px;
+            display: block;
+        }
+
+    .main {
+        text-align: justify;
+        font-size: 95%;
+        width: 80%;
+    }
+
+    .content_container {
+        width: 245px;
+        height: 520px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+        .content_container img {
+            width: 70%;
+            height: 50%;
+        }
+
+        .content_container p {
+            text-align: justify;
+            padding: 0 10px 0 10px;
+        }
+
+    .contact_container {
+        width: 90%;
+    }
+
+    #address {
+        width: 85%;
+        float: left;
+        padding-left: 24px;
+    }
+
+    #map {
+        width: 95%;
+        height: 200px;
+    }
+
+        #map img {
+            width: 95%;
+            height: auto;
+        }
+}
+
+@media screen and (min-width:150px) and (max-width:640px) {
+    .banner {
+        width: 100%;
+    }
+
+        .banner img {
+            width: 300px;
+            height: 150px;
+        }
+
+    .menu nav {
+        height: 200px;
+        margin: 0 5px 0 5px;
+    }
+
+        .menu nav ul {
+            padding-left: 0;
+        }
+
+            .menu nav ul li {
+                width: 100%;
+            }
+
+                .menu nav ul li a {
+                    padding: 10px 25px;
+                }
+
+        .menu nav a:link, .menu nav a:visited {
+            padding: 10px 25px;
+            height: 20px;
+            display: block;
+        }
+
+    h2 {
+        text-align: center;
+    }
+
+    .main {
+        text-align: justify;
+        font-size: 95%;
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 10%;
+    }
+
+    p a {
+        margin-left: 25%;
+    }
+
+    #welcome, section#first_content, section#second_content {
+        margin-left: 5%;
+        width: 75%;
+    }
+
+        #welcome, section#first_content h1, section#second_content h2 {
+            font-size: 130%;
+            text-align: center;
+        }
+
+    #social_media {
+        text-align: center;
+        font-size: 95%;
+        width: 70%;
+        margin-left: 10%;
+    }
+
+        #social_media a img {
+            width: 15%;
+            height: 15%;
+        }
+
+    .content_container {
+        width: 80%;
+        height: auto;
+        margin-left: 5%;
+    }
+
+        .content_container img {
+            width: 70%;
+            height: 30%;
+        }
+
+        .content_container h2 p {
+            text-align: center;
+        }
+
+    .contact_container {
+        width: 90%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    #address {
+        width: 85%;
+        float: left;
+        padding-left: 24px;
+    }
+
+    #map {
+        width: 95%;
+        height: 200px;
+    }
+
+        #map img {
+            width: 95%;
+            height: auto;
+        }
+}

@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="_1525586_CO5027_ASG.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!--Beginning of the head-->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="description" content="Fleur.com.bn." />
+    <meta name="keywords" content="Fleur.co.bn.,fleur,flowers" />
+    <meta name="author" content="1525586_FatenAmiraIzzatyJoperi" />
+
+    <!-- HTML5 Shiv which enables styling of HTML5 elements in versions of Internet Explorer prior to version 9, which do not allow unknown elements to be styled without JavaScript -->
+    <!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+							<![endif]-->
+    <!-- Enables IE6-8 browsers to recognize media queries -->
+    <script type="text/javascript" src="scripts/respond.min.js"></script>
+
+    <!--Define how the website should be displayed on a device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Define the css of the page-->
+    <link rel="stylesheet" href="~/css/stylesheet.css" type="text/css" media="screen" runat="server" />
+
+    <!--Add image to the browser tab	-->
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/favicon.ico" runat="server" />
+
+    <!--Define the title of the page tab-->
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!--Ending of the head-->
+</head>
+<body>
+    <!--Define the body of the page-->
+    <form id="form1" runat="server">
+        <div>
+            <!--Beginning of the header-->
+            <header>
+                <!--Display the banner on the top of the page-->
+                <div class="banner">
+                    <img alt="bannerlogo" src="images/logo.png" />
+                </div>
+
+                <!--Beginning of the Main Menu / Navigation Bar-->
+
+                <asp:ContentPlaceHolder ID="ActiveNavigationLink" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </header>
+
+            <!--Main Content-->
+            <div class="main">
+                <!--Begin editable content-->
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--End editable content-->
+        </div>
+        <!--Ending of the main content section of the page-->
+
+        <!--Beginning of the footer section of the page-->
+        <footer>
+            <p>
+                <a href="~/default.aspx" title="Home" runat="server">Home</a> | 
+                <a href="~/products.aspx" title="Products" runat="server">Products</a> | 
+                <a href="~/contactUs.aspx" title="Contact Us" runat="server">Contact Us</a> | 
+                <a href="~/cart.aspx" title="Cart" runat="server">Cart</a> | 
+                <a href="~/account.aspx" title="Account" runat="server">Account</a> | 
+                <a href="~/admin.aspx" title="Admin" runat="server">Admin</a>
+
+            </p>
+            <p>Copyright 2017 &copy; Fleur.com.bn. | All the photographs and informations are belong to their respective owners.</p>
+            <p>Created by: 1525586 | Faten Amira Izzaty Joperi</p>
+            <a href="http://validator.w3.org/check?uri=referer" title="Validate HTML">Validate HTML</a> | 
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate CSS">Validate CSS</a> | 
+            <a href="http://achecker.ca/checker/?uri=referer" title="Validate WCAG">Check WCAG</a>
+        </footer>
+        <!--Ending of the footer section of the page-->
+    </form>
+</body>
+</html>
