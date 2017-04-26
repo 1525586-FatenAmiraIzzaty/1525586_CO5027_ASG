@@ -2,7 +2,8 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--Define the document language as english-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head runat="server">
     <!--Beginning of the head-->
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />

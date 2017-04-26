@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contactUs.aspx" />
     <Content Include="images\facebok.png" />
     <Content Include="images\facebook.png" />
     <Content Include="images\admin-icon.png" />
@@ -87,7 +88,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="contactUs.aspx" />
     <Content Include="css\stylesheet.css" />
     <Content Include="default.aspx" />
     <Content Include="default.html" />
