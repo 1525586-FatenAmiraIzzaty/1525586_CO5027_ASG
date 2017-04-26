@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #ffc4ff;
+    background-color: #ffe2ff;
     background-position: center;
     font-family: Verdana;
     font-size: 105%;
@@ -9,6 +9,7 @@
     margin: 0;
     overflow-y: scroll;
     overflow-x: hidden;
+    color: #ffffff;
 }
 
 /* Navigation Menu Style
@@ -53,7 +54,7 @@
             }
 
     .menu nav a:link, .menu nav a:visited {
-        color: #ffffff;
+        color: #FFFFFF;
         display: inline-block;
         height: 30px;
     }
@@ -62,7 +63,7 @@
 
     .menu nav a:hover, .menu nav a:active,
     .menu nav .active a:link, .menu nav .active a:visited {
-        background-color: #ffc4ff;
+        background-color: #ffe2ff;
         color: #000000;
         height: 20px;
     }
@@ -78,15 +79,10 @@
     width: 70%;
 }
 
-    .main .profile img {
-        float: right;
-        width: 200px;
-    }
-
 p a {
     text-decoration: none;
     text-align: center;
-    color: #ffffff;
+    color: white;
     background-color: #344544;
     padding: 10px 15px 10px 15px;
 }
@@ -98,8 +94,9 @@ p a {
     color: #ffffff;
 }
 
-    .main section#first_content h2, .main section#second_content h2 {
-        border-bottom: 5px solid #ffc4ff;
+    .main section#first_content h1, .main section#first_content h2, .main section#second_content h2 {
+        border-bottom: 5px solid #ffe2ff;
+        font: #ffffff;
     }
 
 #welcome {
@@ -118,29 +115,6 @@ p a {
         font-size: 250%;
     }
 
-.content {
-    width: 70%;
-    float: left;
-}
-
-.content_container {
-    width: 1000px;
-    margin: 0 auto 0 auto;
-    text-align: center;
-}
-
-    .content_container img {
-        width: 100px;
-        height: 80px;
-        display: inline-block;
-    }
-
-    .content_container p {
-        text-align: center;
-        padding: 0 5% 0 5%;
-    }
-
-
 #social_media {
     text-align: center;
     padding-right: 3%;
@@ -152,6 +126,10 @@ p a {
         height: 7%;
     }
 
+    #social_media h3 {
+        color: #872187;
+    }
+
 /* Page Footer
    ====================== */
 
@@ -161,41 +139,20 @@ footer {
     text-align: center;
     padding: 12px 20px 13px 20px;
     height: auto;
-    color: #ffffff;
+    color: white;
     background-color: #872187;
 }
 
     footer a {
         text-decoration: none;
         text-align: center;
-        color: #ffffff;
+        color: white;
         background-color: #344544;
         padding: 5px 5px 5px 5px;
         margin: 0;
     }
 
 /* Contact Form */
-
-.contact_container {
-    width: 500px;
-    height: 804px;
-    margin: 20px auto;
-    background-image: url('../images/transparent.png');
-    float: left;
-}
-
-.info {
-    width: 100%;
-    padding: 1px 2px;
-    color: #ffffff;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 1px 1px 1px #000000;
-}
-
-.infoHeader {
-    text-decoration: underline;
-}
 
 .contact-form {
     padding: 20px 40px 50px 10px;
@@ -228,7 +185,7 @@ footer {
 }
 
     .contact-button:hover {
-        background-color: #ffc4ff;
+        background-color: #ffe2ff;
         color: #000000;
     }
 
@@ -249,7 +206,11 @@ footer {
     color: #fff200;
 }
 
-/* Map */
+/* Contact Form and Map */
+
+.bottom_para {
+    padding-bottom: 10px;
+}
 
 #map {
     width: 795px;
@@ -257,6 +218,7 @@ footer {
     margin: 0px;
     margin-bottom: 10px;
     overflow: scroll;
+    color: #000000;
 }
 
     #map img {
@@ -302,18 +264,6 @@ footer {
             display: block;
         }
 
-    .content_container {
-        width: 285px;
-        height: 510px;
-        margin-left: 10px;
-        margin-right: 15px;
-    }
-
-        .content_container img {
-            width: 100px;
-            height: 80px;
-        }
-
     #welcome img {
         float: left;
         width: 100%;
@@ -321,10 +271,6 @@ footer {
 
     #welcome h1 {
         font-size: 200%;
-    }
-
-    .contact_container {
-        width: 90%;
     }
 
     #map {
@@ -371,27 +317,6 @@ footer {
         text-align: justify;
         font-size: 95%;
         width: 80%;
-    }
-
-    .content_container {
-        width: 245px;
-        height: 520px;
-        margin-left: 0;
-        margin-right: 10px;
-    }
-
-        .content_container img {
-            width: 70%;
-            height: 50%;
-        }
-
-        .content_container p {
-            text-align: justify;
-            padding: 0 10px 0 10px;
-        }
-
-    .contact_container {
-        width: 90%;
     }
 
     #map {
@@ -448,15 +373,11 @@ footer {
         width: 100%;
     }
 
-    .content {
-        margin-left: 10%;
-    }
-
     p a {
         margin-left: 25%;
     }
 
-    #welcome, #first_content, section#second_content {
+    #welcome, section#first_content, section#second_content {
         margin-left: 5%;
         width: 75%;
     }
@@ -477,25 +398,6 @@ footer {
             width: 15%;
             height: 15%;
         }
-
-    .content_container {
-        width: 80%;
-        height: auto;
-        margin-left: 5%;
-    }
-
-        .content_container img {
-            width: 70%;
-            height: 30%;
-        }
-
-        .content_container h2 p {
-            text-align: center;
-        }
-
-    .contact_container {
-        width: 90%;
-    }
 
     footer {
         height: auto;
