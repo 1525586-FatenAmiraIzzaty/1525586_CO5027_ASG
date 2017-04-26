@@ -28,20 +28,20 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <section id="first_content">
         <div class="contact-form">
-            <h2>Contact Us</h2>
+            <h1>Contact Us</h1>
             <p>Fill in the form below and we'll get back to you within 24 hours.</p>
             <p>Thank you in advance for your feedback.</p>
             <asp:Label ID="lblName" runat="server" Text="Name:" class="contact-label"></asp:Label><asp:RequiredFieldValidator ID="reqNameValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtName" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="txtName" runat="server" type="text" placeholder="Name is required" class="contact-input"></asp:TextBox>
+            <asp:TextBox ID="txtName" runat="server" placeholder="Name is required" class="contact-input" TabIndex="1"></asp:TextBox>
             <asp:Label ID="lblEmail" runat="server" Text="Email:" class="contact-label"></asp:Label><asp:RequiredFieldValidator ID="reqEmailValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtEmail" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="regExprChkEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="*e.g. someone@example.com" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" class="validation" ValidationGroup="validatedControls"></asp:RegularExpressionValidator>
-            <asp:TextBox ID="txtEmail" runat="server" type="email" placeholder="Email Address is required" class="contact-input"></asp:TextBox>
+            <asp:TextBox ID="txtEmail" runat="server" placeholder="Email Address is required" class="contact-input" TabIndex="2"></asp:TextBox>
             <asp:Label ID="lblSubject" runat="server" Text="Subject:" class="contact-label"></asp:Label><asp:RequiredFieldValidator ID="reqSubjectValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtSubject" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="txtSubject" runat="server" type="text" placeholder="Subject is required" class="contact-input"></asp:TextBox>
+            <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject is required" class="contact-input" TabIndex="3"></asp:TextBox>
             <asp:Label ID="lblMessage" runat="server" Text="Message:" class="contact-label"></asp:Label><asp:RequiredFieldValidator ID="reqMessageValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtMessage" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="txtMessage" runat="server" type="text" placeholder="Message is required" class="contact-input" TextMode="MultiLine"></asp:TextBox>
-            <asp:Button ID="btnReset" EnableClientScript="False" runat="server" Text="Reset" type="reset" title="Reset" class="contact-button" OnClick="btnReset_Click" CausesValidation="False" ValidationGroup="unvalidatedControls" />
-            <asp:Button ID="btnSend" runat="server" Text="Send" OnClick="btnSend_Click" type="send" title="Submit" class="contact-button" ValidationGroup="validatedControls" />
+            <asp:TextBox ID="txtMessage" runat="server" placeholder="Message is required" class="contact-input" TextMode="MultiLine" TabIndex="4"></asp:TextBox>
+            <asp:Button ID="btnReset" runat="server" Text="Reset"  title="Reset" class="contact-button" OnClick="btnReset_Click" CausesValidation="False" ValidationGroup="unvalidatedControls" />
+            <asp:Button ID="btnSend" runat="server" Text="Send" OnClick="btnSend_Click" title="Submit" class="contact-button" ValidationGroup="validatedControls" />
             <span class="literal">
                 <asp:Literal ID="litResult" runat="server"></asp:Literal></span>
         </div>
@@ -62,7 +62,8 @@
                 // When the user clicks the marker, an info window opens.
 
                 function initMap() {
-                    var myLatLng = { lat: 4.885731, lng: 114.931669 };
+                    var myLatLng = { lat: 4.885991, lng: 114.931261 };
+                    var collegeLatLng = { lat: 4.885731, lng: 114.931669 };
                     var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 19,
                         center: myLatLng
@@ -77,8 +78,21 @@
                         '</div>' +
                         '</div>';
 
+                    var contentString1 = '<div id="content">' +
+                        '<div id="siteNotice">' +
+                        '</div>' +
+                        '<h1 id="firstHeading" class="firstHeading">Laksamana College of Business</h1>' +
+                        '<div id="bodyContent">' +
+                        '<p><b>College located here!</b></p>' +
+                        '</div>' +
+                        '</div>';
+
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
+                    });
+
+                    var infowindow1 = new google.maps.InfoWindow({
+                        content: contentString1
                     });
 
                     var marker = new google.maps.Marker({
@@ -88,6 +102,15 @@
                     });
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
+                    });
+
+                    var marker1 = new google.maps.Marker({
+                        position: collegeLatLng,
+                        map: map,
+                        title: 'Laksamana College of Business'
+                    });
+                    marker1.addListener('click', function () {
+                        infowindow1.open(map, marker1);
                     });
                 }
             </script>

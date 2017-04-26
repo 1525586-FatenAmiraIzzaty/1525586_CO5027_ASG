@@ -30,7 +30,7 @@ namespace _1525586_CO5027_ASG
             MailMessage msg = new MailMessage("lcbchester1525586@gmail.com", txtEmail.Text);
             msg.IsBodyHtml = true;
             msg.Subject = "Dear " + txtName.Text + ", thank you for your feedback!";
-            msg.Body =  "Dear " + txtName.Text + ". Thank you for your message: "+ txtMessage.Text;
+            msg.Body =  "Dear " + txtName.Text + "( " + txtEmail.Text + " )" + ". This is to notify you that we have received your message from our website: [" + txtSubject.Text + "], Message details: " + txtMessage.Text;
             smtpClient.Send(msg);
            
             try
