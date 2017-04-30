@@ -28,7 +28,6 @@ namespace _1525586_CO5027_ASG
             smtpClient.Credentials = credentials;
 
             MailMessage msg = new MailMessage("lcbchester1525586@gmail.com", txtEmail.Text);
-            msg.IsBodyHtml = true;
             msg.Subject = "Dear " + txtName.Text + ", thank you for your feedback!";
             msg.Body =  "Dear " + txtName.Text + "( " + txtEmail.Text + " )" + ". This is to notify you that we have received your message from our website: [" + txtSubject.Text + "], Message details: " + txtMessage.Text;
             smtpClient.Send(msg);
