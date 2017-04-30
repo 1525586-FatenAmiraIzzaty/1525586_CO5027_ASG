@@ -38,15 +38,12 @@
     </section>
 
     <section id="first_content">
-
         <h2>Latest Product</h2>
         <p><strong>Minimal price, maximum impression.</strong> These flower bouquets still pack all the style, charm and freshness you’ve come to expect from us. So go ahead, save a few dollars. We won’t tell.</p>
-    </section>
-
-    <section id="second_content">
-
-        <h2>Special For Loved Ones</h2>
-        <p>Attach pictures here</p>
+        <p><strong>Tulip With Pink Jar - Price: BND 80.00</strong></p>
+                <p><img src="~/images/products/Prod_1_RainbowTulipWithPinkJar.jpg" alt="Product 1: Rainbow Tulip With Pink Jar" width="220" height="331" runat="server"/></p>
+        <p><strong>Rainbow Roses - Price: BND 80.00</strong></p>
+                <p><img src="~/images/products/Prod_2_RainbowRoses.jpg" alt="Product 2: Rainbow Roses" width="220" height="331" runat="server"/></p>
     </section>
 
     <section id="social_media">
