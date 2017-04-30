@@ -1,0 +1,415 @@
+﻿body {
+    background-color: #ffe2ff;
+    background-position: center;
+    font-family: Verdana;
+    font-size: 105%;
+    line-height: 1.5;
+    padding-bottom: 0;
+    background-image: url('../images/white-flowers-background-1.jpg');
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: #ffffff;
+}
+
+/* Navigation Menu Style
+   ====================== */
+
+.banner {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+    .banner img {
+        display: inline-block;
+        height: 200px;
+        width: 800px;
+        background-position: center top;
+    }
+
+.menu nav {
+    background-color: #872187;
+    height: 45px;
+}
+
+    .menu nav ul {
+        text-align: center;
+        list-style: none;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+        .menu nav ul li {
+            display: inline;
+        }
+
+            .menu nav ul li a {
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #ffffff;
+                padding: 12px 20px 13px 20px;
+            }
+
+    .menu nav a:link, .menu nav a:visited {
+        color: #FFFFFF;
+        display: inline-block;
+        height: 30px;
+    }
+
+    /* Allow to change the visited link */
+
+    .menu nav a:hover, .menu nav a:active,
+    .menu nav .active a:link, .menu nav .active a:visited {
+        background-color: #ffe2ff;
+        color: #000000;
+        height: 20px;
+    }
+
+
+/* Main Content Style
+   ====================== */
+
+.main {
+    text-align: justify;
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+p a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #344544;
+    padding: 10px 15px 10px 15px;
+}
+
+.main section#first_content, .main section#second_content {
+    padding: 5% 5%;
+    margin-top: 2%;
+    background-image: url('../images/transparent.png');
+    color: #ffffff;
+}
+
+    .main section#first_content h1, .main section#first_content h2, .main section#second_content h2 {
+        border-bottom: 5px solid #ffe2ff;
+        font: #ffffff;
+    }
+
+#welcome {
+    padding: 5% 5%;
+    margin-top: 0;
+    background-image: url('../images/transparent.png');
+    color: #ffffff;
+}
+
+    #welcome img {
+        float: left;
+        width: 35%;
+    }
+
+    #welcome h1 {
+        font-size: 250%;
+    }
+
+#social_media {
+    text-align: center;
+    padding-right: 3%;
+    line-height: 0;
+}
+
+    #social_media a img {
+        width: 7%;
+        height: 7%;
+    }
+
+    #social_media h3 {
+        color: #872187;
+    }
+
+/* Page Footer
+   ====================== */
+
+footer {
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    padding: 12px 20px 13px 20px;
+    height: auto;
+    color: white;
+    background-color: #872187;
+}
+
+    footer a {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: #344544;
+        padding: 5px 5px 5px 5px;
+        margin: 0;
+    }
+
+/* Contact Form */
+
+.contact-form {
+    padding: 20px 40px 50px 10px;
+}
+
+.contact-label {
+    color: #ffffff;
+    font-weight: bold;
+    width: auto;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-button {
+    width: 40%;
+    padding: 20px 0;
+    margin: 10px 0 50px;
+    font-size: 20px;
+    border: none;
+    background-color: #872187;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .contact-button:hover {
+        background-color: #ffe2ff;
+        color: #000000;
+    }
+
+    .contact-input:focus, .contact-button:focus {
+        outline: none;
+    }
+
+.contact-input:focus {
+    background-color: #ffd800;
+}
+
+.validation {
+    font-weight: bold;
+    color: #fff200;
+}
+
+.literal {
+    color: #fff200;
+}
+
+/* Contact Form and Map */
+
+.bottom_para {
+    padding-bottom: 10px;
+}
+
+#map {
+    width: 795px;
+    height: 500px;
+    margin: 0px;
+    margin-bottom: 10px;
+    overflow: scroll;
+    color: #000000;
+}
+
+    #map img {
+        width: 900px;
+        height: 500px;
+        margin: 0px;
+    }
+
+/* Responsive Web Forms
+   ====================== */
+@media screen and (max-width:1280px) {
+    .banner img {
+        width: 800px;
+        height: 200px;
+    }
+
+    .main {
+        text-align: justify;
+        font-size: 95%;
+        width: 80%;
+    }
+
+    .menu nav {
+        height: 200px;
+        margin: 0 5px 0 5px;
+    }
+
+        .menu nav ul {
+            padding-left: 0;
+        }
+
+            .menu nav ul li {
+                width: 100%;
+            }
+
+                .menu nav ul li a {
+                    padding: 10px 25px;
+                }
+
+        .menu nav a:link, .menu nav a:visited {
+            padding: 10px 25px;
+            height: 20px;
+            display: block;
+        }
+
+    #welcome img {
+        float: left;
+        width: 100%;
+    }
+
+    #welcome h1 {
+        font-size: 200%;
+    }
+
+    #map {
+        width: 95%;
+        height: 200px;
+    }
+
+        #map img {
+            width: 95%;
+            height: auto;
+        }
+}
+
+@media screen and (min-width:720px) and (max-width:1080px) {
+    .banner img {
+        width: 600px;
+        height: 200px;
+    }
+
+    .menu nav {
+        height: 200px;
+        margin: 0 5px 0 5px;
+    }
+
+        .menu nav ul {
+            padding-left: 0;
+        }
+
+            .menu nav ul li {
+                width: 100%;
+            }
+
+                .menu nav ul li a {
+                    padding: 10px 25px;
+                }
+
+        .menu nav a:link, .menu nav a:visited {
+            padding: 10px 25px;
+            height: 20px;
+            display: block;
+        }
+
+    .main {
+        text-align: justify;
+        font-size: 95%;
+        width: 80%;
+    }
+
+    #map {
+        width: 95%;
+        height: 200px;
+    }
+
+        #map img {
+            width: 95%;
+            height: auto;
+        }
+}
+
+@media screen and (min-width:150px) and (max-width:640px) {
+    .banner {
+        width: 100%;
+    }
+
+        .banner img {
+            width: 300px;
+            height: 150px;
+        }
+
+    .menu nav {
+        height: 200px;
+        margin: 0 5px 0 5px;
+    }
+
+        .menu nav ul {
+            padding-left: 0;
+        }
+
+            .menu nav ul li {
+                width: 100%;
+            }
+
+                .menu nav ul li a {
+                    padding: 10px 25px;
+                }
+
+        .menu nav a:link, .menu nav a:visited {
+            padding: 10px 25px;
+            height: 20px;
+            display: block;
+        }
+
+    h2 {
+        text-align: center;
+    }
+
+    .main {
+        text-align: justify;
+        font-size: 95%;
+        width: 100%;
+    }
+
+    p a {
+        margin-left: 25%;
+    }
+
+    #welcome, section#first_content, section#second_content {
+        margin-left: 5%;
+        width: 75%;
+    }
+
+        #welcome, section#first_content h1, section#second_content h2 {
+            font-size: 130%;
+            text-align: center;
+        }
+
+    #social_media {
+        text-align: center;
+        font-size: 95%;
+        width: 70%;
+        margin-left: 10%;
+    }
+
+        #social_media a img {
+            width: 15%;
+            height: 15%;
+        }
+
+    footer {
+        height: auto;
+    }
+
+    #map {
+        width: 95%;
+        height: 200px;
+    }
+
+        #map img {
+            width: 95%;
+            height: auto;
+        }
+}
