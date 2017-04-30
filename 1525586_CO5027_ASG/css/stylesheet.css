@@ -88,7 +88,7 @@ p a {
 }
 
 .main section#first_content, .main section#second_content {
-    padding: 3% 5%;
+    padding: 5% 5%;
     margin-top: 2%;
     background-image: url('../images/transparent.png');
     color: #ffffff;
@@ -96,7 +96,7 @@ p a {
 
     .main section#first_content h1, .main section#first_content h2, .main section#second_content h2 {
         border-bottom: 5px solid #ffe2ff;
-        color: #ffffff;
+        font: #ffffff;
     }
 
 #welcome {
