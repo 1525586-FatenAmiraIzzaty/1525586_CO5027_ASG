@@ -18,7 +18,7 @@
                 <li><a href="~/cart.aspx" title="Cart" runat="server">
                     <img src="images/shoppingcart-icon.png" width="25" height="25" alt="Go To Cart Page" />
                     Cart</a></li>
-                <li><a href="~/account.aspx" title="Account" runat="server">
+                <li><a href="~/login.aspx" title="Account" runat="server">
                     <img src="images/account-icon.png" width="25" height="25" alt="Go To Account Page" />
                     Account</a></li>
             </ul>
@@ -27,21 +27,21 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <section id="first_content">
-        <div class="contact-form">
+        <div class="style-form">
             <h1>Contact Us</h1>
             <p>Fill in the form below and we'll get back to you within 24 hours.</p>
             <p>Thank you in advance for your feedback.</p>
-            <asp:Label ID="lblName" runat="server" Text="Name:" class="contact-label"></asp:Label><asp:RequiredFieldValidator ID="reqNameValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtName" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="txtName" runat="server" placeholder="Name is required" class="contact-input" TabIndex="1"></asp:TextBox>
-            <asp:Label ID="lblEmail" runat="server" Text="Email:" class="contact-label"></asp:Label><asp:RequiredFieldValidator ID="reqEmailValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtEmail" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
+            <asp:Label ID="lblName" runat="server" Text="Name:" class="style-label"></asp:Label><asp:RequiredFieldValidator ID="reqNameValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtName" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="txtName" runat="server" placeholder="Name is required" class="style-input" TabIndex="1"></asp:TextBox>
+            <asp:Label ID="lblEmail" runat="server" Text="Email:" class="style-label"></asp:Label><asp:RequiredFieldValidator ID="reqEmailValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtEmail" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="regExprChkEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="*e.g. someone@example.com" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" class="validation" ValidationGroup="validatedControls"></asp:RegularExpressionValidator>
-            <asp:TextBox ID="txtEmail" runat="server" placeholder="Email Address is required" class="contact-input" TabIndex="2"></asp:TextBox>
-            <asp:Label ID="lblSubject" runat="server" Text="Subject:" class="contact-label"></asp:Label><asp:RequiredFieldValidator ID="reqSubjectValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtSubject" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject is required" class="contact-input" TabIndex="3"></asp:TextBox>
-            <asp:Label ID="lblMessage" runat="server" Text="Message:" class="contact-label"></asp:Label><asp:RequiredFieldValidator ID="reqMessageValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtMessage" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="txtMessage" runat="server" placeholder="Message is required" class="contact-input" TextMode="MultiLine" TabIndex="4"></asp:TextBox>
-            <asp:Button ID="btnReset" runat="server" Text="Reset"  title="Reset" class="contact-button" OnClick="btnReset_Click" CausesValidation="False" ValidationGroup="unvalidatedControls" />
-            <asp:Button ID="btnSend" runat="server" Text="Send" OnClick="btnSend_Click" title="Submit" class="contact-button" ValidationGroup="validatedControls" />
+            <asp:TextBox ID="txtEmail" runat="server" placeholder="Email Address is required" class="style-input" TabIndex="2"></asp:TextBox>
+            <asp:Label ID="lblSubject" runat="server" Text="Subject:" class="style-label"></asp:Label><asp:RequiredFieldValidator ID="reqSubjectValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtSubject" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject is required" class="style-input" TabIndex="3"></asp:TextBox>
+            <asp:Label ID="lblMessage" runat="server" Text="Message:" class="style-label"></asp:Label><asp:RequiredFieldValidator ID="reqMessageValidator" runat="server" ErrorMessage="*Required" ControlToValidate="txtMessage" class="validation" ValidationGroup="validatedControls"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="txtMessage" runat="server" placeholder="Message is required" class="style-input" TextMode="MultiLine" TabIndex="4"></asp:TextBox>
+            <asp:Button ID="btnReset" runat="server" Text="Reset"  title="Reset" class="style-button" OnClick="btnReset_Click" CausesValidation="False" ValidationGroup="unvalidatedControls" />
+            <asp:Button ID="btnSend" runat="server" Text="Send" OnClick="btnSend_Click" title="Submit" class="style-button" ValidationGroup="validatedControls" />
             <span class="literal">
                 <asp:Literal ID="litResult" runat="server"></asp:Literal></span>
         </div>

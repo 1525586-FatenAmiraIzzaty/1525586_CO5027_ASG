@@ -10,16 +10,16 @@
 namespace _1525586_CO5027_ASG {
     
     
-    public partial class _default {
+    public partial class OrderPage {
         
         /// <summary>
-        /// rptrProducts control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptrProducts;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
         /// SqlDataSource1 control.

@@ -10,7 +10,7 @@
 namespace _1525586_CO5027_ASG {
     
     
-    public partial class _default {
+    public partial class product {
         
         /// <summary>
         /// rptrProducts control.
