@@ -40,7 +40,6 @@ namespace _1525586_CO5027_ASG
             {
                 //todo: Either authenticate the user (log them in) or redirect them to the login page to log in themselves
                 litRegisterError.Text = "Successfully registered.";
-                txtRegUserName.Text = "";
                 txtRegEmail.Text = "";
                 txtRegPassword.Text = "";
                 txtRegConfirmPassword.Text = "";
@@ -48,7 +47,6 @@ namespace _1525586_CO5027_ASG
             else
             {
                 litRegisterError.Text = "An error has occurred: " + result.Errors.FirstOrDefault();
-                txtRegUserName.Text = "";
                 txtRegEmail.Text = "";
                 txtRegPassword.Text = "";
                 txtRegConfirmPassword.Text = "";
@@ -77,11 +75,11 @@ namespace _1525586_CO5027_ASG
                 else if (userManager.IsInRole(user.Id, "registeredcustomer"))
                 {
                     LogUserIn(userManager, user);
-                    Server.Transfer("cart.aspx", true);
+                    Server.Transfer("default.aspx", true);
                 }
                 else
                 {
-                    Server.Transfer("defaulty.aspx", true);
+                    Server.Transfer("default.aspx", true);
                 }
             }
             else

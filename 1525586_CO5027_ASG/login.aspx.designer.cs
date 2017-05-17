@@ -13,33 +13,6 @@ namespace _1525586_CO5027_ASG {
     public partial class login {
         
         /// <summary>
-        /// lblRegUserName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRegUserName;
-        
-        /// <summary>
-        /// txtRegUserName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRegUserName;
-        
-        /// <summary>
-        /// reqValRegUsername control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRegUsername;
-        
-        /// <summary>
         /// lblRegEmail control.
         /// </summary>
         /// <remarks>

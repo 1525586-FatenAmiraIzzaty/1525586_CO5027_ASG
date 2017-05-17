@@ -15,9 +15,6 @@
                 <li><a href="~/contactUs.aspx" title="Go to Contact Us" runat="server">
                     <img src="images/contact-icon.png" width="25" height="25" alt="Go To Contact Us Page" />
                     Contact Us</a></li>
-                <li><a href="~/cart.aspx" title="Go to Cart" runat="server">
-                    <img src="images/shoppingcart-icon.png" width="25" height="25" alt="Go To Cart Page" />
-                    Cart</a></li>
                 <li><a href="~/login.aspx" title="Go to Account" runat="server">
                     <img src="images/account-icon.png" width="25" height="25" alt="Go To Account Page" />
                     Account</a></li>

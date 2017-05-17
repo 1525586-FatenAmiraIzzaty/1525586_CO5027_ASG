@@ -69,7 +69,6 @@
                 <a href="~/default.aspx" title="Home" runat="server">Home</a> | 
                 <a href="~/products.aspx" title="Products" runat="server">Products</a> | 
                 <a href="~/contactUs.aspx" title="Contact Us" runat="server">Contact Us</a> | 
-                <a href="~/cart.aspx" title="Cart" runat="server">Cart</a> | 
                 <a href="~/login.aspx" title="Account" runat="server">Account</a> | 
                 <a href="~/manageProduct.aspx" title="Admin" runat="server">Admin</a>
 

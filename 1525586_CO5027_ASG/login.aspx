@@ -15,9 +15,6 @@
                 <li><a href="~/contactUs.aspx" title="Go to Contact Us" runat="server">
                     <img src="images/contact-icon.png" width="25" height="25" alt="Go To Contact Us Page" />
                     Contact Us</a></li>
-                <li><a href="~/cart.aspx" title="Go to Cart" runat="server">
-                    <img src="images/shoppingcart-icon.png" width="25" height="25" alt="Go To Cart Page" />
-                    Cart</a></li>
                 <li><a href="~/login.aspx" title="Go to Account" runat="server">
                     <img src="images/account-icon.png" width="25" height="25" alt="Go To Account Page" />
                     Account</a></li>
@@ -35,21 +32,12 @@
         <p>Creating one is really simple.</p>
 
         <div>
-            <asp:Label ID="lblRegUserName" runat="server" Text="Username" AssociatedControlID="txtRegUserName" class="style-label"></asp:Label>
-            <asp:TextBox ID="txtRegUserName" runat="server" class="style-input" ToolTip="Enter your username" AutoCompleteType="Disabled"></asp:TextBox>
-        </div>
-
-        <div>
-            <asp:RequiredFieldValidator ID="reqValRegUsername" runat="server" ControlToValidate="txtRegUserName" ErrorMessage="Enter your username." ValidationGroup="PersonalInfoGroup" class="validation"></asp:RequiredFieldValidator>
-        </div>
-
-        <div>
             <asp:Label ID="lblRegEmail" runat="server" Text="Email" AssociatedControlID="txtRegEmail" class="style-label"></asp:Label>
             <asp:TextBox ID="txtRegEmail" runat="server" class="style-input" ToolTip="Enter your email address" AutoCompleteType="Disabled"></asp:TextBox>
         </div>
 
         <div>
-            <asp:RequiredFieldValidator ID="reqValRegEmail" runat="server" ControlToValidate="txtRegUserName" ErrorMessage="Enter your email." ValidationGroup="PersonalInfoGroup" class="validation"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="reqValRegEmail" runat="server" ControlToValidate="txtRegEmail" ErrorMessage="Enter your email." ValidationGroup="PersonalInfoGroup" class="validation"></asp:RequiredFieldValidator>
         </div>
         <div>
             <asp:RegularExpressionValidator ID="reqValExprRegEmail" runat="server" ErrorMessage="Invalid email format." ControlToValidate="txtRegEmail" ValidationGroup="PersonalInfoGroup"  class="validation" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
@@ -93,7 +81,7 @@
         <p>Login using the following form.</p>
 
         <div>
-            <asp:Label ID="lblLoginEmail" runat="server" Text="Username" AssociatedControlID="txtLoginEmail" class="style-label"></asp:Label>
+            <asp:Label ID="lblLoginEmail" runat="server" Text="Email" AssociatedControlID="txtLoginEmail" class="style-label"></asp:Label>
             <asp:TextBox ID="txtLoginEmail" runat="server" class="style-input" ToolTip="Enter your valid email / username" AutoCompleteType="Disabled"></asp:TextBox>
         </div>
 
