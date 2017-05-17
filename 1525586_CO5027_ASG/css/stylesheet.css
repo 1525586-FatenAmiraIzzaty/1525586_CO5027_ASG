@@ -130,6 +130,38 @@ p a {
         color: #872187;
     }
 
+.rptrProduct {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    vertical-align: top;
+    border: 2px solid #ffe2ff;
+    padding: 12px;
+}
+
+.rptrProduct a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* GridView */
+.cssGridView {
+    width: 100%;
+    background: #872187;
+    border: solid 2px #ffe2ff;
+}
+.cssGridView td, th {
+    padding: 5px;
+    border: solid 1px #ffe2ff;
+    text-align: center;
+}
+.cssGridView .alt {
+    background: black;
+}
+
+
+
 /* Page Footer
    ====================== */
 
@@ -152,19 +184,20 @@ footer {
         margin: 0;
     }
 
-/* Contact Form */
+/* Style Form */
 
-.contact-form {
+.style-form {
     padding: 20px 40px 50px 10px;
 }
 
-.contact-label {
+.style-label {
     color: #ffffff;
     font-weight: bold;
     width: auto;
+    text-align: left;
 }
 
-.contact-input {
+.style-input {
     width: 100%;
     padding: 15px;
     border: none;
@@ -172,7 +205,7 @@ footer {
     font-weight: bold;
 }
 
-.contact-button {
+.style-button {
     width: 40%;
     padding: 20px 0;
     margin: 10px 0 50px;
@@ -184,16 +217,16 @@ footer {
     cursor: pointer;
 }
 
-    .contact-button:hover {
+    .style-button:hover {
         background-color: #ffe2ff;
         color: #000000;
     }
 
-    .contact-input:focus, .contact-button:focus {
+    .style-input:focus, .style-button:focus {
         outline: none;
     }
 
-.contact-input:focus {
+.style-input:focus {
     background-color: #ffd800;
 }
 
@@ -242,7 +275,7 @@ footer {
     }
 
     .menu nav {
-        height: 200px;
+        height: 240px;
         margin: 0 5px 0 5px;
     }
 
@@ -282,6 +315,13 @@ footer {
             width: 95%;
             height: auto;
         }
+
+    .rptrProduct {
+        width: 250px;
+        height: 300px;
+        margin: 10px;
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width:720px) and (max-width:1080px) {
@@ -291,7 +331,7 @@ footer {
     }
 
     .menu nav {
-        height: 200px;
+        height: 240px;
         margin: 0 5px 0 5px;
     }
 
@@ -328,6 +368,11 @@ footer {
             width: 95%;
             height: auto;
         }
+
+    .rptrProduct {
+        width: 200px;
+        height: 300px;
+    }
 }
 
 @media screen and (min-width:150px) and (max-width:640px) {
@@ -341,7 +386,7 @@ footer {
         }
 
     .menu nav {
-        height: 200px;
+        height: 240px;
         margin: 0 5px 0 5px;
     }
 
@@ -411,5 +456,15 @@ footer {
         #map img {
             width: 95%;
             height: auto;
+        }
+
+    .rptrProduct {
+        width: 200px;
+        height: 300px;
+    }
+
+        .rptrProduct img {
+            width: 50%;
+            height: 50%;
         }
 }
